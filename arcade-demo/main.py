@@ -35,18 +35,18 @@ os.chdir(file_path)
 
 WIDTH = 800
 HEIGHT = 600
-SPRITE_SCALING = 0.5
+SPRITE_SCALING = 0.7
 
 class MenuView(arcade.View):
     def on_show(self):
-        arcade.set_background_color(arcade.color.WHITE)
+        arcade.set_background_color(arcade.color.BLUEBERRY)
 
     def on_draw(self):
         arcade.start_render()
         arcade.draw_text("Menu Screen", WIDTH / 2, HEIGHT / 2,
-                         arcade.color.BLACK, font_size=50, anchor_x="center")
+                         arcade.color.YELLOW_ROSE, font_size=100, anchor_x="center")
         arcade.draw_text("Click to advance", WIDTH / 2, HEIGHT / 2 - 75,
-                         arcade.color.GRAY, font_size=20, anchor_x="center")
+                         arcade.color.GRAY, font_size=40, anchor_x="center")
 
     def on_mouse_press(self, _x, _y, _button, _modifiers):
         instructions_view = InstructionView()
@@ -87,10 +87,10 @@ class GameView(arcade.View):
         self.player_sprite.center_y = 50
         self.player_list.append(self.player_sprite)
 
-        for i in range(5):
+        for i in range(15):
 
             # Create the coin instance
-            coin = arcade.Sprite(":resources:images/items/coinGold.png", SPRITE_SCALING / 3)
+            coin = arcade.Sprite(":resources:images/items/coinGold.png", SPRITE_SCALING / 2)
 
             # Position the coin
             coin.center_x = random.randrange(WIDTH)
