@@ -83,8 +83,8 @@ class GameView(arcade.View):
         self.score = 0
         self.player_sprite = arcade.Sprite(":resources:images/animated_characters/female_person/femalePerson_idle.png",
                                            SPRITE_SCALING)
-        self.player_sprite.center_x = 50
-        self.player_sprite.center_y = 50
+        self.player_sprite.center_x = 20
+        self.player_sprite.center_y = 70
         self.player_list.append(self.player_sprite)
 
         for i in range(15):
