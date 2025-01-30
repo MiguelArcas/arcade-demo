@@ -8,4 +8,4 @@ We are currently in 1.0.2 (Commit)
 
 We are currently in 1.0.3 (Commit)
 
-We are currently in 1.1.0 (Push) 
+We are currently in 1.1.0 (Push, wone grone first try)
